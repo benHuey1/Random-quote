@@ -1,6 +1,7 @@
 @import "./reset.scss";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fraunces:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fraunces:wght@900&family=Quicksand:wght@300&display=swap");
+@import "./mixins.scss";
 body {
     display: flex;
     flex-direction: column;
@@ -23,11 +24,17 @@ body {
         font-weight: 900;
         padding: 20px;
     }
+    @include responsive-mobile {
+        padding: 0px;
+    }
 }
 section {
     min-width: 300px;
     max-width: 1200px;
     height: 350px;
+    @include responsive-mobile {
+        width: 400px;
+    }
 }
 #photo {
     width: 150px;
@@ -55,6 +62,12 @@ section {
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 20px;
     padding: 5px;
+    @include responsive-mobile {
+        width: 80%;
+        height: 200px;
+        margin: 0px auto;
+        padding: 15px;
+    }
 }
 #quote span {
     display: table-cell;

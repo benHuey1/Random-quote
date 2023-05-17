@@ -1,0 +1,6 @@
+//Mixin pour la média-queries de la version mobile
+@mixin responsive-mobile {
+    @media screen and (max-width: 400px) {
+        @content;
+    }
+}
