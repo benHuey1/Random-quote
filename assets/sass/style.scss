@@ -16,9 +16,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    background: rgba(0, 0, 0, 0.2);
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
+    // background-color: rgba(255, 255, 255, 0.4);
     // border: 2px solid white;
     border-radius: 20px;
     padding: 5px;
@@ -44,9 +42,10 @@ section {
     margin-bottom: 50px;
 }
 #quote {
+    z-index: 2;
     display: table;
     height: 150px;
-    width: 80%;
+    width: 1000px;
     margin: 50px auto;
     font-family: "Dancing Script", cursive;
     font-family: "Fraunces", serif;
@@ -55,6 +54,9 @@ section {
     font-weight: 600;
     text-align: center;
     color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 5px;
 }
 #quote span {
     display: table-cell;
