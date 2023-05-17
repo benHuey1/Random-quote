@@ -1,0 +1,78 @@
+@import "./reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fraunces:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fraunces:wght@900&family=Quicksand:wght@300&display=swap");
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(https://cdn.pixabay.com/photo/2023/03/22/06/07/mountain-7868724_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 15px 0;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    // border: 2px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    &-title {
+        font-size: x-large;
+        font-weight: 900;
+        padding: 20px;
+    }
+}
+section {
+    min-width: 300px;
+    max-width: 1200px;
+    height: 350px;
+}
+#photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    object-fit: cover;
+}
+#author {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+#quote {
+    display: table;
+    height: 150px;
+    width: 80%;
+    margin: 50px auto;
+    font-family: "Dancing Script", cursive;
+    font-family: "Fraunces", serif;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+}
+#quote span {
+    display: table-cell;
+    vertical-align: middle;
+}
+button {
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    &:hover {
+        color: darkgrey;
+    }
+}
